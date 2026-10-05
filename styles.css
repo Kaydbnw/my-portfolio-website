@@ -1,0 +1,220 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    color: #10182f;
+    background-color: #ffffff;
+}
+.name{
+    color:#ffffff;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    margin:0;
+}
+#about{
+    background-color: #dce8f7;
+}
+.navbar{
+    display:flex;
+    gap:30px;
+}
+.nav-link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 60px;
+    background-color: #080d1a;
+}
+.hero{
+    padding: 70px 30px;
+    background-color: #cd9cf5;
+    text-align: center;
+}
+.label{
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #d9a441;
+}
+.description{
+    color: #687386;
+    font-size: 21px;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.hero h2{
+    color: #0B1220;
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 10px 0 25px;
+    max-width: 800px;
+    text-align: center;
+}
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service{
+    padding: 90px 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.servive h2{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: #10182f;
+    padding: 40px;
+}
+.service-card{
+    text-align: left;
+    background-color: #f1f5fb;
+    border-radius: 18px;
+    padding: 45px 35px;
+    transition: 0.3s;
+    border: 1px solid #d6e0ee;
+    box-shadow: 0 12px 30px rgba(8, 3, 26, 0.6);
+}
+.service-card h3{
+    font-size: 26px;
+    margin-bottom: 18px;
+    color: #24428f;
+    position: relative;
+}
+.service-card p{
+    color: #54607b;
+    font-size: 26px;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+.service-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40 rgba(8,13, 26, 0.15);
+}
+.menu-button{
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: rgb(28, 13, 201);
+}
+@media(max-width: 768px){
+    .service-container{
+        grid-template-columns: 1fr;
+    }
+    .menu-button{
+        display:block
+    }
+    .navbar{
+        display: none;
+    }
+    .hero h2{
+        font-size: 32px;
+    }
+    .service{
+        padding: 60px 20px;
+    }
+}
+.navbar.show{
+    display: block;
+}
+.service-card h3::after{
+    content: "";
+    display: block;
+    width: 220px;
+    height: 3px;
+    background-color: #efb643;
+    margin-top: 10px;
+    transition: width 0.3s ease;
+}
+.service-card li::before{
+    content: '#';
+    position: absolute;
+    left: 47px;
+    color: #f4b942;
+    font-weight: bold;
+}
+.service-card ul{
+    list-style: none;
+}
+.service-card:hover h3::after{
+    width: 80px;
+}
+.filter-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30 0px;
+}
+.filter-buttons button:hover{
+    background-color:#2563ff ;
+    color: #ffffff;
+}
+.filter-buttons .active{
+    background-color: #2563ff;
+    color: #ffffff;
+}
+.project-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:25px;
+}
+.project-card{
+    padding:35px;
+    background-color:#f1f5fb ;
+    border: 1px solid #d6e0ee;
+    border-radius:20px ;
+    box-shadow: 0 12px 30px rgba(8, 3, 26, 0.6);
+    transition: transfrom 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow: 0 18px 35px rgba(8,13, 26, 0.15);
+
+}
+.projects{
+    padding:100px 8%;
+    text-align: center;
+    background-color: #ffffff;
+}
+.projects h2{
+    font-size:42px;
+    color:#080d1a;
+    margin-bottom:15px;
+}
+.projects-description{
+    color:#5b6780; 
+    margin-bottom: 20px;
+}
+.filter-buttons{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+    margin:30px 0;
+    flex-wrap:wrap;
+}
+.filter-buttons button{
+    padding:12px 24px;
+    border:1px solid #2563ff;
+    background-color: transparent;
+    color:#2563ff;
+    border-radius:25px;
+    cursor:pointer;
+}
+.filter-buttons button:hover{
+    background-color: #24428f;
+    color: #ffffff;
+}
+.filter-buttons.active{
+    background-color: #2563ff;
+    color: #ffffff;
+}

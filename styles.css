@@ -14,7 +14,7 @@ body{
     background-color: #dce8f7;
 }
 .navbar{
-    display:flex;
+    display:none;
     gap:30px;
 }
 .nav-link{
@@ -125,7 +125,8 @@ header{
     }
 }
 .navbar.show{
-    display: block;
+    display: flex;
+    flex-direction:column;
 }
 .service-card h3::after{
     content: "";
